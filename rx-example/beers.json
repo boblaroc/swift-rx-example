@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "War Hog",
+    "style": "American IPA",
+    "brewry": "Feral Brewing Co.",
+    "abv": 7.5,
+    "ibu": 70,
+    "description": "Prepare to be tagged and bagged as this Full Metal Jacket of an American IPA rains an apocalyptic, resinous hellfire of clustered hops and passionfruit aromas upon the senses.",
+    "image": "warhog"
+  },
+  {
+    "id": 2,
+    "name": "Pacific Ale",
+    "style": "Australian Ale",
+    "brewry": "Stone and Wood",
+    "abv": 4.4,
+    "ibu": 22,
+    "description": "Inspired by our home on the edge of the Pacific Ocean and brewed using all Australian barley, wheat and Galaxy hops, Pacific Ale is cloudy and golden with a big fruity aroma and a refreshing finish.",
+    "image": "pacific-ale"
+ },
+ {
+    "id": 3,
+    "name": "Pirate Life IIPA",
+    "style": "Imperial IPA",
+    "brewry": "Pirate Life",
+    "abv": 8.8,
+    "ibu": 120,
+    "description": "It’s a bit of complicated symbiosis between these three requirements and each of these three provide multiple elements. The malt provides the complex spectrum of sugars for fermentation as well as the main structure and body of the beer. The hops contribute bitterness to balance the malt sweetness as well as resinous piney flavours and juicy fruity-citrusy aromas. The fermentation provides us with a big hit of fun juice (ethanol) and the vast array of incredibly important characterful aroma and flavour compounds.",
+    "image": "pirate-life"
+ },
+ {
+    "id": 4,
+    "name": "Sunset Ale",
+    "style": "Red Ale",
+    "brewry": "Pirate Life",
+    "abv": 4.6,
+    "ibu": 28,
+    "description": "An instant favourite at Crafty Towers as soon as it arrived on the scene as the second Two Birds release was this red ale going by the name Sunset. Drinkers are first met by a rather enticing combo of tropical and citrus aromas, backed up with a touch of toffee that hints at the rich malt flavours to follow.Full-flavoured and pretty full-bodied too for a beer of its alcohol content, it's a well balanced take on the style that's a versatile food beer and also a drop we've used to entice newcomers softly towards the world of darker drops.",
+    "image": "sunset-ale"
+ },
+ {
+    "id": 5,
+    "name": "Footscray Ale",
+    "style": "American Pale Ale",
+    "brewry": "West City Brewing",
+    "abv": 4.3,
+    "ibu": 28,
+    "description": "An instant favourite at Crafty Towers as soon as it arrived on the scene as the second Two Birds release was this red ale going by the name Sunset. Drinkers are first met by a rather enticing combo of tropical and citrus aromas, backed up with a touch of toffee that hints at the rich malt flavours to follow.Full-flavoured and pretty full-bodied too for a beer of its alcohol content, it's a well balanced take on the style that's a versatile food beer and also a drop we've used to entice newcomers softly towards the world of darker drops.",
+    "image": "footscray-ale"
+ },
+ {
+    "id": 6,
+    "name": "Kaiju Krush!",
+    "style": "Pale Ale",
+    "brewry": "Kaiju!",
+    "abv": 4.7,
+    "ibu": 32,
+    "description": "Well, the 'Sup's sunrise carpet is going to be more colourful at this year's Meredith than ever before... Yes, another day, another Aussie craft brewer with a beer in can, as Mr East Coast Canning continues to wear ruts into the roads between Brisbane and Melbourne. Yet, when the results are as colourful as this first KAIJU! can, bring 'em on!",
+    "image": "kaiju-krush"
+ },
+ {
+    "id": 7,
+    "name": "Hawkers Saison",
+    "style": "Saison",
+    "brewry": "Hawkers",
+    "abv": 5.6,
+    "ibu": 50,
+    "description": "The fourth (and, we believe, final) beer to form the Hawkers core range is this Saison. It's fitting as, when doing their groundwork for Hawkers, it was sampling a saison at Bright Brewery that Mazen's eyes lit up. Impressed by the beer and subsequently by its brewer, Jon Seltin, it was the moment that led to the two working together at Hawkers. The beer they've created at Hawkers is another, like their Pale, that leaps out of the glass. There's lemon and bitter orange peel at work with the soft spices from the Belgian yeast on the nose with high carbonation there to balance the cloudy orange-golden beer's relatively full body. A peppery dryness counters the fruity, sweet malt and lingers long on the palate too.",
+    "image": "hawkers-saison"
+ }
+]

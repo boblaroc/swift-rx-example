@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="1yb-g5-9ut">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Signin View Controller-->
+        <scene sceneID="Fu6-LZ-Y29">
+            <objects>
+                <viewController id="1yb-g5-9ut" customClass="SigninViewController" customModule="rx_example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cIt-Bf-9jf"/>
+                        <viewControllerLayoutGuide type="bottom" id="HEe-Mg-gKk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hyO-bP-ByG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kkr-N6-4f0">
+                                <rect key="frame" x="16" y="280" width="343" height="30"/>
+                                <color key="tintColor" red="0.25098039215686274" green="0.53333333333333333" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xgT-eu-AjP"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="klc-Dg-oGw">
+                                <rect key="frame" x="16" y="318" width="343" height="30"/>
+                                <color key="tintColor" red="0.0039215686274509803" green="0.0" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="h7N-6I-p3d"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="go" secureTextEntry="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdQ-Aw-LiX">
+                                <rect key="frame" x="16" y="251" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3IJ-ey-utv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="18"/>
+                                <color key="textColor" red="0.81176470588235294" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rx Example" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pws-26-EZB">
+                                <rect key="frame" x="16" y="100" width="343" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="BVr-Ap-F9z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="44"/>
+                                <color key="textColor" red="0.396078431372549" green="0.396078431372549" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kR9-75-I2V">
+                                <rect key="frame" x="259" y="356" width="100" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.25098039215686274" green="0.53333333333333333" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kkr-N6-4f0" firstAttribute="trailing" secondItem="hyO-bP-ByG" secondAttribute="trailingMargin" id="2rg-he-WYL"/>
+                            <constraint firstItem="klc-Dg-oGw" firstAttribute="leading" secondItem="hyO-bP-ByG" secondAttribute="leadingMargin" id="8I5-Jb-2b9"/>
+                            <constraint firstItem="pws-26-EZB" firstAttribute="top" secondItem="cIt-Bf-9jf" secondAttribute="bottom" constant="80" id="ARa-xH-BXB"/>
+                            <constraint firstItem="kkr-N6-4f0" firstAttribute="top" secondItem="cdQ-Aw-LiX" secondAttribute="bottom" constant="8" id="Ke3-IK-bX1"/>
+                            <constraint firstItem="kkr-N6-4f0" firstAttribute="leading" secondItem="hyO-bP-ByG" secondAttribute="leadingMargin" id="Vad-95-zcP"/>
+                            <constraint firstItem="klc-Dg-oGw" firstAttribute="top" secondItem="kkr-N6-4f0" secondAttribute="bottom" constant="8" id="d8f-1L-k38"/>
+                            <constraint firstItem="pws-26-EZB" firstAttribute="leading" secondItem="hyO-bP-ByG" secondAttribute="leadingMargin" id="f5b-Sw-iLP"/>
+                            <constraint firstItem="klc-Dg-oGw" firstAttribute="centerY" secondItem="hyO-bP-ByG" secondAttribute="centerY" id="ppa-XE-hD8"/>
+                            <constraint firstItem="cdQ-Aw-LiX" firstAttribute="leading" secondItem="hyO-bP-ByG" secondAttribute="leadingMargin" id="tOj-ak-6gk"/>
+                            <constraint firstItem="cdQ-Aw-LiX" firstAttribute="trailing" secondItem="hyO-bP-ByG" secondAttribute="trailingMargin" id="x7K-t1-YWc"/>
+                            <constraint firstItem="klc-Dg-oGw" firstAttribute="trailing" secondItem="hyO-bP-ByG" secondAttribute="trailingMargin" id="y2b-X3-2cB"/>
+                            <constraint firstItem="pws-26-EZB" firstAttribute="trailing" secondItem="hyO-bP-ByG" secondAttribute="trailingMargin" id="ys4-xl-V0c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="errorLabel" destination="cdQ-Aw-LiX" id="gW1-L7-95u"/>
+                        <outlet property="passwordTextField" destination="klc-Dg-oGw" id="v3o-Ib-MoX"/>
+                        <outlet property="signinButton" destination="kR9-75-I2V" id="Zka-T7-VjK"/>
+                        <outlet property="usernameTextField" destination="kkr-N6-4f0" id="0xx-I3-jre"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yxe-qV-iGV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-314.39999999999998" y="71.514242878560722"/>
+        </scene>
+    </scenes>
+</document>
