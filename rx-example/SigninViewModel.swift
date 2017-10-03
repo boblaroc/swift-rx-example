@@ -12,20 +12,12 @@ class SigninViewModel: BaseViewModel<SigninViewModelDelegateProtocol> {
     let username = Variable<String?>(nil)
     let password = Variable<String?>(nil)
     let error = Variable<String?>(nil)
-    let signInTapped = Variable<()>()
+
     let signedIn = Variable<()>()
-
-    required init(delegate: SigninViewModelDelegateProtocol) {
-        super.init(delegate: delegate)
-
-        signInTapped.asObservable()
-            .subscribe(onNext: signin)
-            .disposed(by: disposeBag)
-    }
 
     // MARK: Sign In
 
-    private func signin() {
+    func signin() {
 
         guard let username = username.value, let password = password.value
             else { return }

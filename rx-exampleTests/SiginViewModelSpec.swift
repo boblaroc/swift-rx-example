@@ -44,7 +44,7 @@ class SigninViewModelTests: QuickSpec {
                     vm.signedIn.asObservable().subscribe(onNext: { b = true }).dispose()
 
                     //action
-                    vm.signInTapped.value = ()
+                    vm.signin()
 
                     //assert
                     expect(b).to(beTrue())
@@ -57,11 +57,9 @@ class SigninViewModelTests: QuickSpec {
                     vm.password.value = "password"
 
                     //action
-                    vm.signInTapped.value = ()
+                    vm.signin()
 
                     //assert
-                    print("******* \(vm.error.value)")
-
                     expect(vm.error.value).toNot(beNil())
                 }
             }

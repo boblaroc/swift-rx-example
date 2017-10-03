@@ -41,7 +41,7 @@ class DetailViewModelTests: QuickSpec {
                 it("should navigate to next beer onNext") {
                     let vm = DetailViewModel(delegate: TestDetailVMDelegate())
 
-                    vm.next.value = ()
+                    vm.onNext()
 
                     let name = Variable<String?>("")
                     (name <- vm.name).dispose()

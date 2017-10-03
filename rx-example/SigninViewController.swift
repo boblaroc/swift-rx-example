@@ -17,11 +17,12 @@ class SigninViewController: UIViewController, ViewControllerProtocol {
     override func viewDidLoad() {
 
         disposeBag.dispose([
-            viewModel.username <- usernameTextField.rx.text,
-            viewModel.password <- passwordTextField.rx.text,
-            errorLabel.rx.text <- viewModel.error,
+            viewModel.username          <- usernameTextField.rx.text,
+            viewModel.password          <- passwordTextField.rx.text,
+            errorLabel.rx.text          <- viewModel.error,
             signinButton.rx_driveEnable <- viewModel.signInEnabled,
-            viewModel.signInTapped <- signinButton.rx.tap,
+
+            signinButton.rx.tap.subscribe(onNext: viewModel.signin),
             viewModel.signedIn.asObservable().subscribe(onNext: onSignedIn)
             ])
     }

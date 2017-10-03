@@ -19,8 +19,6 @@ class DetailViewModel: BaseViewModel<DetailViewModelDelegateProtocol> {
     let description = Variable<String?>("")
     let image = Variable<String>("no-image")
 
-    let next = Variable<()>()
-    let previous = Variable<()>()
     let nextEnabled = Variable<Bool>(true)
     let previousEnabled = Variable<Bool>(true)
 
@@ -32,8 +30,6 @@ class DetailViewModel: BaseViewModel<DetailViewModelDelegateProtocol> {
 
         disposeBag.dispose([
 
-            next.asObservable().subscribe(onNext: onNext),
-            previous.asObservable().subscribe(onNext: onPrev),
             Observable
                 .combineLatest(delegate.beers, index.asObservable(), resultSelector: selectBeer)
                 .filter { $0 != nil }.map { $0! }
@@ -57,7 +53,7 @@ class DetailViewModel: BaseViewModel<DetailViewModelDelegateProtocol> {
         image.value = beer.image
     }
 
-    private func onNext() { index.value += 1 }
+    func onNext() { index.value += 1 }
 
-    private func onPrev() { index.value -= 1 }
+    func onPrev() { index.value -= 1 }
 }

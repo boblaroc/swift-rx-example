@@ -24,17 +24,18 @@ class DetailViewController: UIViewController, ViewControllerProtocol {
         super.viewDidLoad()
 
         disposeBag.dispose([
-            nameLabel.rx.text       <- viewModel.name,
-            styleLabel.rx.text      <- viewModel.style,
-            brewryLabel.rx.text     <- viewModel.brewry,
-            abvLabel.rx.text        <- viewModel.abv,
-            ibuLabel.rx.text        <- viewModel.ibu,
-            descriptionTextView.rx.text <- viewModel.description,
-            imageView.rx.image      <- makeImage(image: viewModel.image),
-            viewModel.next          <- nextButton.rx.tap,
-            nextButton.rx_driveEnable <- viewModel.nextEnabled,
-            viewModel.previous      <- previousButton.rx.tap,
-            previousButton.rx_driveEnable <- viewModel.previousEnabled
+            nameLabel.rx.text               <- viewModel.name,
+            styleLabel.rx.text              <- viewModel.style,
+            brewryLabel.rx.text             <- viewModel.brewry,
+            abvLabel.rx.text                <- viewModel.abv,
+            ibuLabel.rx.text                <- viewModel.ibu,
+            descriptionTextView.rx.text     <- viewModel.description,
+            imageView.rx.image              <- makeImage(image: viewModel.image),
+            nextButton.rx_driveEnable       <- viewModel.nextEnabled,
+            previousButton.rx_driveEnable   <- viewModel.previousEnabled,
+
+            nextButton.rx.tap.subscribe(onNext: viewModel.onNext),
+            previousButton.rx.tap.subscribe(onNext: viewModel.onPrev)
         ])
     }
 

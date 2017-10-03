@@ -39,7 +39,7 @@ class ListViewModelTests: QuickSpec {
 
                 it("should call showDetail") {
                     let vm = ListViewModel(delegate: TestListVMDelegate())
-                    vm.itemTapped.value = 1
+                    vm.onItemTapped(index: 1)
 
                     expect((vm.delegate as! TestListVMDelegate).showDetailCalled).to(beTrue())
                 }

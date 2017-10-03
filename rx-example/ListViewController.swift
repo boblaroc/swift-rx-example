@@ -20,8 +20,10 @@ class ListViewController: UIViewController, ViewControllerProtocol {
 
         disposeBag.dispose([
 
-            viewModel.itemTapped <- tableView.rx.itemSelected.map { $0.item },
             viewModel.searchVariable <- textView.rx.text,
+
+            tableView.rx.itemSelected.map { $0.item }
+                .subscribe(onNext: viewModel.onItemTapped),
 
             viewModel.filteredBeers()
                 .debounce(0.3, scheduler: MainScheduler.instance)
